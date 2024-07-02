@@ -33,6 +33,21 @@ nav ul li a {
     text-decoration: none;
 }
 
+#hero {
+    background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 section {
     padding: 20px;
     margin: 10px auto;
@@ -43,6 +58,16 @@ section {
 
 h1, h2, h3 {
     color: #ff7f50;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
 }
 
 footer {
