@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -49,18 +50,30 @@ nav ul li a {
 }
 
 #hero {
-    background-color: #ff7f50;
+    background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
     color: white;
     text-align: center;
     padding: 150px 20px 100px 20px;
     margin-top: 80px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
 }
 
 .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
     width: 100%;
     max-width: 600px;
-    margin-top: 40px;
 }
 
 .cta-button {
