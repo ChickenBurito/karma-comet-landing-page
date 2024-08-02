@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
 
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('nav .hamburger-menu');
+    const navLinks = document.querySelector('nav .nav-links');
 
     console.log('Hamburger element:', hamburger);
     console.log('Nav links element:', navLinks);
 
     if (hamburger && navLinks) {
+        console.log('Both elements found, adding event listener');
         hamburger.addEventListener('click', function() {
             console.log('Hamburger clicked');
             navLinks.classList.toggle('active');
@@ -26,5 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     } else {
         console.error('Hamburger or nav links element not found');
+        console.log('HTML content of nav:', document.querySelector('nav').innerHTML);
     }
 });

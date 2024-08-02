@@ -29,6 +29,7 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .bar {
@@ -219,11 +220,15 @@ footer {
     }
     .hamburger-menu {
         display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
 
-    .nav-links {
-        position: fixed;
-        right: -100%;
+    nav ul.nav-links {
+        display: none;
+        position: absolute;
+        right: 0;
         top: 70px;
         flex-direction: column;
         background-color: #fff;
@@ -233,15 +238,15 @@ footer {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .nav-links.active {
-        right: 0;
+    nav ul.nav-links.active {
+        display: flex;
     }
 
-    .nav-links li {
+    nav ul.nav-links li {
         margin: 25px 0;
     }
 
-    .nav-links li a {
+    nav ul.nav-links li a {
         font-size: 1.2rem;
     }
 
