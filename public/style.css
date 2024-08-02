@@ -24,6 +24,22 @@ header {
     z-index: 1000;
 }
 
+/* The hamburger menu start*/
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+/* The hamburger menu end*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -200,5 +216,45 @@ footer {
 
     .feature, .review, .contact-item {
         margin: 20px 0;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 25px 0;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+    }
+
+    /* Hamburger menu animation */
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
