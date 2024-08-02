@@ -2,86 +2,203 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
 }
 
-.header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
-.header .logo {
-    width: 50px;
-    vertical-align: middle;
+.logo {
+    height: 40px;
 }
 
-.header h1 {
-    display: inline;
-    margin-left: 10px;
-    font-size: 24px;
-}
-
-.header nav ul {
-    list-style: none;
+nav ul {
     display: flex;
-    justify-content: center;
-    padding: 0;
+    list-style: none;
 }
 
-.header nav ul li {
-    margin: 0 15px;
+nav ul li {
+    margin-left: 20px;
 }
 
-.header nav ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    font-size: 16px;
+    color: #333;
+    font-weight: bold;
 }
 
-.policy-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #f9f9f9;
 }
 
-.policy-section h1 {
-    font-size: 32px;
+.hero .content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
+    color: #1a2b5f;
 }
 
-.policy-section h2 {
-    font-size: 24px;
-    margin-top: 20px;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.about, .features, .reviews, .contact {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .content, .features .content, .reviews .content, .contact .content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image, .features-image, .reviews-image, .contact-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a2b5f;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 2rem;
+    color: #4caf50;
     margin-bottom: 10px;
 }
 
-.policy-section p,
-.policy-section ul {
-    margin-bottom: 20px;
-    line-height: 1.6;
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.policy-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.review {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
 }
 
-.policy-section ul ul {
-    list-style-type: circle;
+.review p {
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
-.footer {
-    background-color: #333;
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contact-item {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #1a2b5f;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero, .about, .features, .reviews, .contact {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .hero .content, .about .content, .features .content, .reviews .content, .contact .content,
+    .hero-image, .about-image, .features-image, .reviews-image, .contact-image {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .feature-list, .reviews-list, .contact-info {
+        flex-direction: column;
+    }
+
+    .feature, .review, .contact-item {
+        margin: 20px 0;
+    }
 }
