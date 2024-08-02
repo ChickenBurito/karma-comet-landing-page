@@ -22,6 +22,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0;
 }
 
 /* The hamburger menu start*/
@@ -46,6 +47,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -67,11 +70,15 @@ nav ul li a {
     font-weight: bold;
 }
 
+main {
+    padding-top: 80px; /* Adjust this value based on header height */
+}
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 50px;
+    padding: 50px;
     background-color: #f9f9f9;
 }
 
