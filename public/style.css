@@ -263,11 +263,11 @@ main {
     max-width: 500px;
 }
 
-.contact-image {
+/* .contact-image {
     flex: 1;
     max-width: 500px;
     border-radius: 10px;
-}
+} */
 
 .contact-info {
     display: flex;
@@ -275,11 +275,11 @@ main {
     margin-top: 50px;
 }
 
-.contact-item {
+/* .contact-item {
     flex: 1;
     margin: 0 20px;
     text-align: center;
-}
+} */
 
 /* .social-icons {
     display: flex;
