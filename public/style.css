@@ -80,11 +80,13 @@ main {
     justify-content: space-between;
     padding: 50px;
     background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .hero .content {
-    flex: 1;
-    max-width: 500px;
+    flex: 1 1 300px; /* Allow content to grow and shrink, with a minimum width */
+    max-width: 600px;
+    margin-right: 20px; /* Add some space between content and image */
 }
 
 .hero h1 {
@@ -109,8 +111,10 @@ main {
 }
 
 .hero-image {
-    flex: 1;
-    max-width: 500px;
+    flex: 1 1 300px; /* Allow image to grow and shrink, with a minimum width */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
     border-radius: 10px;
 }
 
@@ -209,7 +213,7 @@ footer {
 
     .hero, .about, .features, .reviews, .contact {
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 30px 20px;
     }
 
     .hero .content, .about .content, .features .content, .reviews .content, .contact .content,
@@ -218,6 +222,16 @@ footer {
         margin-bottom: 30px;
     }
 
+    .hero .content {
+        margin-right: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-height: 300px; /* Limit the height on mobile devices */
+        object-fit: cover;
+    }
+    
     .feature-list, .reviews-list, .contact-info {
         flex-direction: column;
     }
