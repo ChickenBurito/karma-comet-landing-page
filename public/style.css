@@ -275,11 +275,11 @@ main {
     margin-top: 50px;
 }
 
-/* .contact-item {
+.contact-item {
     flex: 1;
     margin: 0 20px;
     text-align: center;
-} */
+}
 
 /* .social-icons {
     display: flex;
@@ -292,11 +292,11 @@ main {
     font-size: 24px;
     color: #1a2b5f;
     transition: color 0.3s ease;
-}
+} */
 
 .social-icons a:hover {
-    color: #4caf50;
-} */
+    color: #333;
+} 
 
 /* Can remove the following if you're not using image icons anymore */
 /* .social-icons img {
