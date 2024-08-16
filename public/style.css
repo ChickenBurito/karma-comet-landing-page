@@ -42,6 +42,8 @@ header {
 }
 /* The hamburger menu end*/
 
+/* The nav menu start*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -69,6 +71,8 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
+/* The nav menu ends*/
 
 main {
     padding-top: 80px; /* Adjust this value based on header height */
@@ -145,30 +149,6 @@ main {
     border-radius: 10px;
 }
 
-.features, .reviews, .contact {
-    padding: 100px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.features .content, .reviews .content, .contact .content {
-    flex: 1;
-    max-width: 500px;
-}
-
-.features-image, .reviews-image, .contact-image {
-    flex: 1;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #1a2b5f;
-}
-
 .feature-list {
     display: flex;
     justify-content: space-between;
@@ -185,6 +165,30 @@ h2 {
     font-size: 2rem;
     color: #4caf50;
     margin-bottom: 10px;
+}
+
+.reviews, .contact {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews .content, .contact .content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.reviews-image, .contact-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a2b5f;
 }
 
 .reviews-list {
@@ -238,13 +242,13 @@ footer {
         display: none;
     }
 
-    .hero, .features, .reviews, .contact {
+    .hero, .reviews, .contact {
         flex-direction: column;
         padding: 30px 20px;
     }
 
-    .hero .content, .features .content, .reviews .content, .contact .content,
-    .hero-image, .features-image, .reviews-image, .contact-image {
+    .hero .content, .reviews .content, .contact .content,
+    .hero-image, .reviews-image, .contact-image {
         max-width: 100%;
         margin-bottom: 30px;
     }
@@ -276,12 +280,32 @@ footer {
     .about-image {
         max-height: 300px; /* Limit the height on mobile devices */
     }
+    
+    .features {
+        padding: 50px 20px;
+    }
+
+    .features-content {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin: 0 0 30px;
+    }
+
+    .features-image-container {
+        max-width: 100%;
+    }
+
+    .features-image {
+        max-height: 300px; /* Limit the height on mobile devices */
+    }
 
     .feature-list, .reviews-list, .contact-info {
         flex-direction: column;
     }
 
-    .feature, .review, .contact-item {
+    .review, .contact-item {
         margin: 20px 0;
     }
     .hamburger-menu {
