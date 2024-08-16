@@ -281,7 +281,7 @@ main {
     text-align: center;
 }
 
-.social-icons {
+/* .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -296,7 +296,7 @@ main {
 
 .social-icons a:hover {
     color: #4caf50;
-}
+} */
 
 /* Can remove the following if you're not using image icons anymore */
 /* .social-icons img {
