@@ -289,7 +289,20 @@ main {
 
 .social-icons a {
     margin: 0 10px;
+    font-size: 24px;
+    color: #1a2b5f;
+    transition: color 0.3s ease;
 }
+
+.social-icons a:hover {
+    color: #4caf50;
+}
+
+/* Can remove the following if you're not using image icons anymore */
+/* .social-icons img {
+    width: 24px;
+    height: 24px;
+} */
 
 footer {
     background-color: #1a2b5f;
