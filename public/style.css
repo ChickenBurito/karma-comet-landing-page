@@ -118,19 +118,46 @@ main {
     border-radius: 10px;
 }
 
-.about, .features, .reviews, .contact {
+.about {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.about .content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.about-image-container {
+    flex: 1 1 400px;
+    max-width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.features, .reviews, .contact {
     padding: 100px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.about .content, .features .content, .reviews .content, .contact .content {
+.features .content, .reviews .content, .contact .content {
     flex: 1;
     max-width: 500px;
 }
 
-.about-image, .features-image, .reviews-image, .contact-image {
+.features-image, .reviews-image, .contact-image {
     flex: 1;
     max-width: 500px;
     border-radius: 10px;
@@ -211,13 +238,13 @@ footer {
         display: none;
     }
 
-    .hero, .about, .features, .reviews, .contact {
+    .hero, .features, .reviews, .contact {
         flex-direction: column;
         padding: 30px 20px;
     }
 
-    .hero .content, .about .content, .features .content, .reviews .content, .contact .content,
-    .hero-image, .about-image, .features-image, .reviews-image, .contact-image {
+    .hero .content, .features .content, .reviews .content, .contact .content,
+    .hero-image, .features-image, .reviews-image, .contact-image {
         max-width: 100%;
         margin-bottom: 30px;
     }
@@ -231,7 +258,25 @@ footer {
         max-height: 300px; /* Limit the height on mobile devices */
         object-fit: cover;
     }
-    
+
+    .about {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .about .content {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-image-container {
+        width: 100%;
+    }
+
+    .about-image {
+        max-height: 300px; /* Limit the height on mobile devices */
+    }
+
     .feature-list, .reviews-list, .contact-info {
         flex-direction: column;
     }
