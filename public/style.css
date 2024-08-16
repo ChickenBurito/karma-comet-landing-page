@@ -54,7 +54,8 @@ nav {
 }
 
 .logo {
-    height: 40px;
+    height: 80px; /* Double the original height of 40px */
+    width: auto; /* Maintain aspect ratio */
 }
 
 nav ul {
@@ -312,6 +313,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        height: 60px; /* Slightly smaller on mobile, but still larger than original */
+    }
+
     nav ul {
         display: none;
     }
