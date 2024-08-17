@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -409,14 +409,14 @@ footer {
         display: flex;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 25px;
     }
 
     nav ul.nav-links {
         display: none;
         position: absolute;
         right: 0;
-        top: 70px;
+        top: 80px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
